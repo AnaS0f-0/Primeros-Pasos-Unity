@@ -1,35 +1,31 @@
+using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Playermovement : MonoBehaviour
-
-
-
 {
-    // Variables
+    public float altura = 1.53f;
+    public int edad = 17;
+    public string nombre = "Anny";
+    public bool puedeVotar = true;
 
+    public GameObject gameObject;
+    public Rigidbody2D rigidbody2D;
+    public Collider2D collider2D;
+    public SpriteRenderer spriteRenderer;
+    public Transform transform;
 
-    [SerializeField] private int _edad = 17;
-
-    
-    public float fuerza = 500f;
-    
-   
-
-   
-
-    [SerializeField] private Rigidbody2D _rigidbody2D;
-
-
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        _rigidbody2D.AddForce(Vector2.right * fuerza);
-
+        Debug.Log(" Hola: " + nombre + " tu edad es: " + edad + " tu altura es: " + altura);
+        rigidbody2D.simulated = false;
+        spriteRenderer.color = Color.magenta;
+        transform.position = new Vector3(10f, 0f, 0f);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+
     }
 }
+   

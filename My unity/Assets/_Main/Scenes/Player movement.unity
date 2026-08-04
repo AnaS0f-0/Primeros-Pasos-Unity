@@ -918,8 +918,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2111782765}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.88, y: -0.08, z: 0}
-  m_LocalScale: {x: 1.2355, y: 1.2355, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -937,9 +937,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 595365f006d8fc448916e3fcb6e2ff99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _edad: 17
-  fuerza: 500
-  _rigidbody2D: {fileID: 2111782770}
+  altura: 1.53
+  edad: 17
+  nombre: Anny
+  puedeVotar: 1
+  gameObject: {fileID: 2111782765}
+  rigidbody2D: {fileID: 2111782770}
+  collider2D: {fileID: 2111782769}
+  spriteRenderer: {fileID: 2111782766}
+  transform: {fileID: 0}
 --- !u!70 &2111782769
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
