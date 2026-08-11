@@ -9,24 +9,35 @@ public class Playermovement : MonoBehaviour
 
   
     [SerializeField] private Rigidbody2D _rigidbody2D;
+    [SerializeField] private GroundCheck _groundCheck;
    
-    private void Start()
+    private void Awake()
     {
 
         _rigidbody2D = GetComponent<Rigidbody2D>();
         
     }
-
-    private void Update()
+    private void Start()
+    {
+        
+    }
+    private void FixedUpdate()
 
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (_groundCheck.isGround)
         {
-            _rigidbody2D.AddForce(Vector2.up * _force);
+            if (Input.GetKey(KeyCode.Space))
+            {
+                _rigidbody2D.AddForce(Vector2.up * _force);
+                Debug.Log("Oprimi la tecla");
+            }
+            _rigidbody2D.velocity = Vector2.right * _speed;
         }
-        _rigidbody2D.velocity = Vector2.right * _speed * Time.deltaTime;
 
-
+    }
+    private void Update()
+    {
+        
     }
 }
    
