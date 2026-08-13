@@ -28,7 +28,7 @@ public class Playermovement : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.Space))
             {
-                _rigidbody2D.AddForce(Vector2.up * _force);
+                _rigidbody2D.AddForce(Vector2.up * _force,ForceMode2D.Force);
                 Debug.Log("Oprimi la tecla");
             }
             _rigidbody2D.velocity = Vector2.right * _speed;
