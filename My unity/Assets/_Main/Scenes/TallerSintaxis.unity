@@ -265,6 +265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerStats: {fileID: 1293039836}
+  _uiManager: {fileID: 1740656508}
 --- !u!1 &30189335
 GameObject:
   m_ObjectHideFlags: 0
@@ -2519,7 +2520,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 282267518}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.638008, y: -3.2614002, z: -10}
+  m_LocalPosition: {x: -21.627586, y: -3.2614002, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5885,6 +5886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerStats: {fileID: 1293039836}
+  _uiManager: {fileID: 1740656508}
 --- !u!1 &1068751396
 GameObject:
   m_ObjectHideFlags: 0
@@ -6900,6 +6902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerStats: {fileID: 1293039836}
+  _uiManager: {fileID: 1740656508}
 --- !u!1 &1207648397
 GameObject:
   m_ObjectHideFlags: 0
@@ -7670,6 +7673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _puntosVida: 50
   _vidaMaxima: 100
+  _uiManager: {fileID: 1740656508}
 --- !u!1 &1295414216
 GameObject:
   m_ObjectHideFlags: 0
@@ -9675,6 +9679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerStats: {fileID: 1293039836}
+  _uiManager: {fileID: 1740656508}
 --- !u!1 &1448343384
 GameObject:
   m_ObjectHideFlags: 0
@@ -10978,6 +10983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerStats: {fileID: 1293039836}
+  _uiManager: {fileID: 0}
 --- !u!1 &1658141356
 GameObject:
   m_ObjectHideFlags: 0
@@ -11324,7 +11330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77570fd6e65955242a5a32c9d687f138, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  barra: {fileID: 1344134186}
+  _barra: {fileID: 1344134186}
 --- !u!1 &1748464135
 GameObject:
   m_ObjectHideFlags: 0
@@ -11601,6 +11607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerStats: {fileID: 1293039836}
+  _uiManager: {fileID: 1740656508}
 --- !u!1 &1778674798
 GameObject:
   m_ObjectHideFlags: 0
@@ -11759,7 +11766,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1778954509}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.93, y: -3.33, z: -4.3}
+  m_LocalPosition: {x: 78.2, y: -1.6, z: -4.3}
   m_LocalScale: {x: 3.0979252, y: 2.2764375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11779,6 +11786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerStats: {fileID: 1293039836}
+  _uiManager: {fileID: 1740656508}
 --- !u!212 &1778954512
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12153,6 +12161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerStats: {fileID: 1293039836}
+  _uiManager: {fileID: 1740656508}
 --- !u!1 &1816813155
 GameObject:
   m_ObjectHideFlags: 0
