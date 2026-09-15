@@ -1,4 +1,5 @@
 
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
@@ -40,6 +41,11 @@ public class PlayerStats : MonoBehaviour
         if (_puntosVida < 40)
         {
             _uiManager.ColorBarra(Color.red);
+        }
+
+        if (_puntosVida == 0)
+        {
+            Destroy(this.gameObject);
         }
     }
 
