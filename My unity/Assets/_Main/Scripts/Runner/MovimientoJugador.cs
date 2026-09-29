@@ -29,11 +29,11 @@ VelocidadMovimiento { get => _velocidadMovimiento; set => _velocidadMovimiento =
                    
               
 
-                Debug.Log("Oprimí la tecla");
+                Debug.Log("Oprimï¿½ la tecla");
             }
         }
 
-        _cuerpoRigido2D.velocity = new Vector2(1 * VelocidadMovimiento, _cuerpoRigido2D.velocity.y);
+        _cuerpoRigido2D.linearVelocity = new Vector2(1 * VelocidadMovimiento, _cuerpoRigido2D.linearVelocity.y);
           
             
      
