@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private GameObject _panelDerrota;
     public void CargarEscena(int scene)
     {
         SceneManager.LoadScene(scene);
@@ -28,4 +29,20 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
     }
+
+    
+
+
+
+    public void ActivarGameOver()
+    {
+        if (gameOverPanel != null)
+        {
+            gameOverPanel.SetActive(true);
+            Time.timeScale = 0f;
+
+        }
+    }
+
+   
 }

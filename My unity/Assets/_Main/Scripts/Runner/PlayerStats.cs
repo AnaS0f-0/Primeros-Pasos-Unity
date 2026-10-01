@@ -1,12 +1,24 @@
 
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
     [SerializeField] private int _puntosVida = 100;
     [SerializeField] private int _vidaMaxima = 100;
     [SerializeField] private UIManager _uiManager;
+    [SerializeField] public GameObject gameOverPanel;
+    [SerializeField] private float vidaActual;
+    public GameManager gameManager;
+
+    private void Start()
+    {
+        vidaActual = _vidaMaxima;
+    }
+
+
+
     public void RestarVida(int daño)
     {
         _puntosVida = _puntosVida - daño;
@@ -22,6 +34,7 @@ public class PlayerStats : MonoBehaviour
         if (_puntosVida > _vidaMaxima)
         {
             _puntosVida = _vidaMaxima;
+
         }
     }
 
@@ -32,7 +45,7 @@ public class PlayerStats : MonoBehaviour
             _uiManager.ColorBarra(Color.green);
         }
 
-        if ((40 <= _puntosVida) && (40 < 80)) 
+        if ((40 <= _puntosVida) && (40 < 80))
         {
             _uiManager.ColorBarra(new Color(1f, 1f, 1f, 1f));
 
@@ -43,11 +56,37 @@ public class PlayerStats : MonoBehaviour
             _uiManager.ColorBarra(Color.red);
         }
 
-        if (_puntosVida == 0)
+        if (_puntosVida <= 0)
         {
             Destroy(this.gameObject);
         }
+
+
     }
 
+    public void RecibirDaño(float cantidad)
+    {
+        vidaActual -= cantidad;
+        Debug.Log("Vida actual: " + vidaActual);
 
+        if (vidaActual <= 0)
+        {
+            vidaActual = 0;
+            Morir();
+        }
+
+
+    }
+
+    void Morir()
+    {
+        Debug.Log("El jugador ha muerto.");
+        if (gameManager != null)
+        {
+            gameManager.ActivarGameOver();
+        }
+    }
 }
+
+
+
