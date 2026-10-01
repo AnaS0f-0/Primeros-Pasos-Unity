@@ -9,7 +9,7 @@ public class ObstaculoMortal : MonoBehaviour
         if (colision.gameObject.tag == "Player")
         {
 
-            _playerStats.RestarVida(100);
+            _playerStats.RestarVida(35);
             _uiManager.RestarFillAmount(0.1f);
         }
     }

@@ -30,19 +30,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-    
-
-
-
-    public void ActivarGameOver()
-    {
-        if (gameOverPanel != null)
-        {
-            gameOverPanel.SetActive(true);
-            Time.timeScale = 0f;
-
-        }
-    }
+   
 
    
 }

@@ -306,6 +306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03c761b01573c524a832ce3fa4f905e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _panelDerrota: {fileID: 0}
 --- !u!1 &1341035828
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,9 +549,37 @@ PrefabInstance:
     m_TransformParent: {fileID: 7974048641108724827}
     m_Modifications:
     - target: {fileID: 647244642570908951, guid: 7a861210024b2cf4fb13aab6490fb385, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 647244642570908951, guid: 7a861210024b2cf4fb13aab6490fb385, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 647244642570908951, guid: 7a861210024b2cf4fb13aab6490fb385, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 738876032}
+    - target: {fileID: 647244642570908951, guid: 7a861210024b2cf4fb13aab6490fb385, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 738876032}
+    - target: {fileID: 647244642570908951, guid: 7a861210024b2cf4fb13aab6490fb385, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 647244642570908951, guid: 7a861210024b2cf4fb13aab6490fb385, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ReanudarElJuego
+      objectReference: {fileID: 0}
+    - target: {fileID: 647244642570908951, guid: 7a861210024b2cf4fb13aab6490fb385, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 647244642570908951, guid: 7a861210024b2cf4fb13aab6490fb385, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6277682114875112671, guid: 7a861210024b2cf4fb13aab6490fb385, type: 3}
       propertyPath: m_Name
       value: Panel fondo menu

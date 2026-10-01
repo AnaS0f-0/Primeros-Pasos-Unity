@@ -8,7 +8,7 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] private int _puntosVida = 100;
     [SerializeField] private int _vidaMaxima = 100;
     [SerializeField] private UIManager _uiManager;
-    [SerializeField] public GameObject gameOverPanel;
+    [SerializeField] public GameObject panelDerrota;
     [SerializeField] private float vidaActual;
     public GameManager gameManager;
 
@@ -56,36 +56,20 @@ public class PlayerStats : MonoBehaviour
             _uiManager.ColorBarra(Color.red);
         }
 
+       
+
         if (_puntosVida <= 0)
         {
-            Destroy(this.gameObject);
+            Time.timeScale = 0;
+            panelDerrota.SetActive(true);
         }
 
 
     }
 
-    public void RecibirDaño(float cantidad)
-    {
-        vidaActual -= cantidad;
-        Debug.Log("Vida actual: " + vidaActual);
+  
 
-        if (vidaActual <= 0)
-        {
-            vidaActual = 0;
-            Morir();
-        }
-
-
-    }
-
-    void Morir()
-    {
-        Debug.Log("El jugador ha muerto.");
-        if (gameManager != null)
-        {
-            gameManager.ActivarGameOver();
-        }
-    }
+ 
 }
 
 
